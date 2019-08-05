@@ -1,3 +1,4 @@
+
 # Higrow.FattureInCloud.Net
 This is an unofficial implementation of the Fatture in Cloud Api for .Net C# Core 2.2. The package is based on the /v1 API version 0.9.14 [https://api.fattureincloud.it/v1/documentation/dist/](https://api.fattureincloud.it/v1/documentation/dist/)
 
@@ -16,7 +17,13 @@ We are integrating the whole app and the DTOs, hereafter the list of implemented
 ## Installation
 **Nuget**
 
-    Install-Package Higrow.FattureInCloud.Net -Version 0.9.14
+Windows
+
+    Install-Package Higrow.FattureInCloud.Net -Version 0.9.14.1
+
+Linux/MacOsx
+
+    dotnet add package Higrow.FattureInCloud.Net --version 0.9.14.1
 
 ## Setup
 Endpoints are split in services in the Higrow.FattureInCloud.Net.Services as follow:
