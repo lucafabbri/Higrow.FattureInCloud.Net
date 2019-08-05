@@ -6,6 +6,10 @@ namespace Higrow.FattureInCloud.Net.DTO
 {
     public class AnagraficaListaRequest : JSONRequest
     {
+        public AnagraficaListaRequest()
+        {
+            pagina = 1;
+        }
         public string filtro { get; set; }
         public string id { get; set; }
         public string nome { get; set; }

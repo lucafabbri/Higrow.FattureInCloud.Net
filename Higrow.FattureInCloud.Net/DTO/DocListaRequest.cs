@@ -6,6 +6,10 @@ namespace Higrow.FattureInCloud.Net.DTO
 {
     public class DocListaRequest:JSONRequest
     {
+        public DocListaRequest()
+        {
+            pagina = 1;
+        }
         public int anno { get; set; }
         public string data_inizio { get; set; }
         public string data_fine { get; set; }

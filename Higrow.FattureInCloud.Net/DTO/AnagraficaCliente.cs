@@ -18,7 +18,7 @@
         public string cf { get; set; }
         public string termini_pagamento { get; set; }
         public bool pagamento_fine_mese { get; set; }
-        public int val_iva_default { get; set; }
+        public double? val_iva_default { get; set; }
         public string desc_iva_default { get; set; }
         public string extra { get; set; }
         public bool PA { get; set; }

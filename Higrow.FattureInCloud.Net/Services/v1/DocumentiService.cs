@@ -27,9 +27,9 @@ namespace Higrow.FattureInCloud.Net.Services.v1
         }
 
         // POST "/{tipo-doc}/modifica"
-        public async Task<GenericSuccessResponse> Modifica(string documento, DocModificaRequest request)
+        public async Task<DocNuovoResponse> Modifica(string documento, DocModificaRequest request)
         {
-            return JsonConvert.DeserializeObject<GenericSuccessResponse>(await GenericPostAsync("/" + documento + "/modifica", request));
+            return JsonConvert.DeserializeObject<DocNuovoResponse>(await GenericPostAsync("/" + documento + "/modifica", request));
         }
 
         // POST "/{tipo-doc}/elimina"
