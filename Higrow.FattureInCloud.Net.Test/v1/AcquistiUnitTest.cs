@@ -19,7 +19,7 @@ namespace Higrow.FattureInCloud.Net.Test.v1
         public async Task TestLista()
         {
             service = new AcquistiService();
-            service.SetKeys("50535", "5c9db272d575fe75376bd1f382d6b66d");
+            service.SetKeys("your_api_uid","your_api_key");
             var result = await service.Lista(new AcquistiListaRequest()
             {
                 anno = 2019
@@ -31,7 +31,7 @@ namespace Higrow.FattureInCloud.Net.Test.v1
         public async Task TestDettagli()
         {
             service = new AcquistiService();
-            service.SetKeys("50535", "5c9db272d575fe75376bd1f382d6b66d");
+            service.SetKeys("your_api_uid","your_api_key");
             var result = await service.Lista(new AcquistiListaRequest()
             {
                 anno = 2019
@@ -47,7 +47,7 @@ namespace Higrow.FattureInCloud.Net.Test.v1
         public async Task TestNuovoModificaElimina()
         {
             service = new AcquistiService();
-            service.SetKeys("50535", "5c9db272d575fe75376bd1f382d6b66d");
+            service.SetKeys("your_api_uid","your_api_key");
             var result = await service.Nuovo(new AcquistiNuovoRequest()
             {
                 nome = "Test"
