@@ -4,7 +4,7 @@ using NUnit.Framework;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Tests.v1
+namespace Higrow.FattureInCloud.Net.Test.v1
 {
     public class AcquistiUnitTest
     {
