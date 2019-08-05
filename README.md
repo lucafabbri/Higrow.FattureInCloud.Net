@@ -19,11 +19,11 @@ We are integrating the whole app and the DTOs, hereafter the list of implemented
 
 Windows
 
-    Install-Package Higrow.FattureInCloud.Net -Version 0.9.14
+    Install-Package Higrow.FattureInCloud.Net -Version 0.9.14.1
 
 Linux/MacOsx
 
-    dotnet add package Higrow.FattureInCloud.Net --version 0.9.14
+    dotnet add package Higrow.FattureInCloud.Net --version 0.9.14.1
 
 ## Setup
 Endpoints are split in services in the Higrow.FattureInCloud.Net.Services as follow:
