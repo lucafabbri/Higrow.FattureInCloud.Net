@@ -14,7 +14,7 @@ namespace Higrow.FattureInCloud.Net.Test.v1
         public void Setup()
         {
             service = new AcquistiService();
-            service.SetKeys("50535", "5c9db272d575fe75376bd1f382d6b66d");
+            service.SetKeys("your_api_uid","your_api_key");
         }
 
         [Test]

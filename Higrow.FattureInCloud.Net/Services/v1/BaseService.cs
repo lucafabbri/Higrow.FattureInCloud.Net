@@ -17,6 +17,8 @@ namespace Higrow.FattureInCloud.Net.Services
         protected string _api_key;
         protected HttpClient _client;
 
+        public HttpResponseMessage LastResponse;
+
         protected string _baseAddress = "https://api.fattureincloud.it:443/v1";
         public BaseService()
         {
@@ -43,17 +45,17 @@ namespace Higrow.FattureInCloud.Net.Services
                 Debug.WriteLine("Sending request");
                 Debug.WriteLine(await body.ReadAsStringAsync());
                 Debug.WriteLine("...");
-                var response = await _client.PostAsync(_baseAddress + endpoint, body);
+                LastResponse = await _client.PostAsync(_baseAddress + endpoint, body);
                 Debug.WriteLine("Response received");
-                if (response.IsSuccessStatusCode)
+                if (LastResponse.IsSuccessStatusCode)
                 {
-                    result =  await response.Content.ReadAsStringAsync();
+                    result =  await LastResponse.Content.ReadAsStringAsync();
                     Debug.WriteLine(result);
                 }
                 else
                 {
                     Debug.WriteLine("Response error");
-                    Debug.WriteLine(await response.Content.ReadAsStringAsync());
+                    Debug.WriteLine(await LastResponse.Content.ReadAsStringAsync());
                 }
             }
             return result;
