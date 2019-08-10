@@ -2,6 +2,11 @@
 {
     public class DocNuovoArticolo
     {
+        public DocNuovoArticolo()
+        {
+            cod_iva = 0; //this is the first iva code 0 == 22%
+            tassabile = true; //set false to keep item out of iva calculation
+        }
         public string id { get; set; }
         public string codice { get; set; }
         public string nome { get; set; }
