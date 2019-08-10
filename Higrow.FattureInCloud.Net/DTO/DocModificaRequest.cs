@@ -26,14 +26,14 @@ namespace Higrow.FattureInCloud.Net.DTO
         public string numero { get; set; }
         public string data { get; set; }
         public string valuta { get; set; }
-        public int valuta_cambio { get; set; }
+        public double valuta_cambio { get; set; }
         public bool prezzi_ivati { get; set; }
-        public int rivalsa { get; set; }
-        public int cassa { get; set; }
-        public int rit_acconto { get; set; }
-        public int imponibile_ritenuta { get; set; }
-        public int rit_altra { get; set; }
-        public int marca_bollo { get; set; }
+        public double rivalsa { get; set; }
+        public double cassa { get; set; }
+        public double rit_acconto { get; set; }
+        public double imponibile_ritenuta { get; set; }
+        public double rit_altra { get; set; }
+        public double marca_bollo { get; set; }
         public string oggetto_visibile { get; set; }
         public string oggetto_interno { get; set; }
         public string centro_ricavo { get; set; }
