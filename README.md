@@ -9,9 +9,9 @@ We are integrating the whole app and the DTOs, hereafter the list of implemented
  - [x] Prodotti
  - [x] Documenti
  - [x] Acquisti
- - [ ] Corrispettivi
- - [ ] Magazzino
- - [ ] Mail
+ - [x] Corrispettivi
+ - [x] Magazzino
+ - [x] Mail
  - [x] Info
 
 ## Installation
@@ -19,11 +19,11 @@ We are integrating the whole app and the DTOs, hereafter the list of implemented
 
 Windows
 
-    Install-Package Higrow.FattureInCloud.Net -Version 0.9.14.1
+    Install-Package Higrow.FattureInCloud.Net -Version 0.9.14.2
 
 Linux/MacOsx
 
-    dotnet add package Higrow.FattureInCloud.Net --version 0.9.14.1
+    dotnet add package Higrow.FattureInCloud.Net --version 0.9.14.2
 
 ## Setup
 Endpoints are split in services in the Higrow.FattureInCloud.Net.Services as follow:
@@ -33,6 +33,9 @@ Endpoints are split in services in the Higrow.FattureInCloud.Net.Services as fol
  - DocumentiService 
  - AcquistiService
  - InfoService
+ - CorrispettiviService
+ - MagazzinoService
+ - MailService
 
 To start using a Service you should enter your FattureInCloud api_uid and api_key, please go here to get yours 
 [https://secure.fattureincloud.it/api](https://secure.fattureincloud.it/api)
