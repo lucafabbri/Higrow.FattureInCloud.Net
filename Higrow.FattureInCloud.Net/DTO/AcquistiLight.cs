@@ -15,5 +15,6 @@
         public double valuta_cambio { get; set; }
         public object link_allegato { get; set; }
         public string prossima_scadenza { get; set; }
+        public bool saldato { get; set; }
     }
 }
